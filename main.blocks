@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="zV09lPacv|`@o:)wz9K)">Celsius</variable></variables><block type="device_button_event" id="~gVg1/kW?Pm9p[-)-hz(" x="24" y="-231"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="device_show_number" id=")QT[JS(Wr=buK$-NM`UJ"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="XUk~]|R(-PdYNkeTj/*v"><field name="VAR" id="zV09lPacv|`@o:)wz9K)">Celsius</field></block></value><next><block type="device_print_message" id="X#3Y[K#`tG/]PyipDlT0"><value name="text"><shadow type="text" id="!t|m)xyiR5;E0q~ndJe6"><field name="TEXT">C</field></shadow></value></block></next></block></statement></block><block type="device_forever" id="ayAqjj!x4kl5YWuc3dRm" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="Q^?.{Fa+e,Y=PK[ud}+H"><field name="VAR" id="zV09lPacv|`@o:)wz9K)">Celsius</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_temperature" id="?k*OF?G}`4?_=z8BJBoo"></block></value></block></statement></block><block type="device_gesture_event" id="aNL1dTB,ANgO}p~cx@xa" x="84" y="193"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="controls_if" id="(53WBb7qU`Mi`(dIM9c;"><mutation elseif="1" else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="o0~9OjqLmCP._Ce{JKbj"><field name="OP">GTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="|||q]E.qKF@:$gMTrgzC"><field name="VAR" id="zV09lPacv|`@o:)wz9K)">Celsius</field></block></value><value name="B"><shadow type="math_number" id="-.CjYb=N/~ZV^q[}d9X{"><field name="NUM">18</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="XpJL:WfJ=[B(/;:r[ZVd"><field name="LEDS">`
+        # . # . # 
+        . # # # . 
+        # # # # # 
+        . # # # . 
+        # . # . #
+        `</field></block></statement><value name="IF1"><block type="logic_compare" id="/=XG,heT`_)]#fj`*nX@"><field name="OP">GTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="%/L)S!)(@/oIi./0ki%F"><field name="VAR" id="zV09lPacv|`@o:)wz9K)">Celsius</field></block></value><value name="B"><shadow type="math_number" id="]%;*?j[AF{-*D~6[I-Q/"><field name="NUM">5</field></shadow></value></block></value><statement name="DO1"><block type="device_show_leds" id="ggkB%qkY6pWTCIQp?aAt"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="|@u5B/S~A}%{V%!PPQz/"><field name="LEDS">`
+        # . . . # 
+        . # # # . 
+        . # . # . 
+        . # # # . 
+        # . . . #
+        `</field></block></statement></block></statement></block></xml>
